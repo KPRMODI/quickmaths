@@ -29,14 +29,14 @@ public class NumberManipulator {
         // BONUS:
         // Cast the number to an int and print the character it represents
         char user_character = (char) Math.round(user_number);// casts user_number as a character as long as it meets ASCII standards
-        System.out.println(Math.round(user_number) + " --> " + "\'" + user_character + "\'");
+        
+        // Format a summary table using formatted output
+         System.out.printf("%d ------> '%s'\n",Math.round(user_number), user_character); // %d for decimal and %s for strings
+        // You have to use larger numbers in order to convert a number to char with ASCII
         
         // Add 1 to that number and print the next character
         user_character++; //increment the variable by 1
         user_number++; //increment the variable by 1
-        System.out.println(Math.round(user_number) + " --> " + "\'" + user_character + "\'");
-
-        // Format a summary table using formatted output
-        // System.out.printf();
+         System.out.printf("%d ------> '%s'",Math.round(user_number), user_character);
     }
 }
